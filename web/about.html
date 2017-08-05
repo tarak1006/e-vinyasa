@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>E-VINYASA 2K17</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bs.events.css">
+	<link rel="stylesheet" type="text/css" href="css/mat.events.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/hexagon.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+        
+        <link href="css1/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css1/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css1/style.css" type="text/css" media="all" />
+<link rel="stylesheet" 	href="css1/chocolat.css" type="text/css" media="all">
+	
+	<style>
+		body {
+			padding-top: 70px !important;
+		}
+		
+		#navbar-top {
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)) !important;
+		}
+	</style>
+	<style>
+		.md-close {
+			color: #fff;
+			margin-top: 6em !important;
+			border: 1px solid #fff;
+			transition-duration: 0.3s;
+		}
+		
+		.md-close:hover {
+			background-color: #fff !important;
+			color: #000 !important;
+		}
+		
+		.md-content {
+			/*width: 70vw;*/
+			/*height: 100vh;*/
+			text-align: center;
+			padding-top: 6em;
+			border: 1px solid #fff;
+		}
+		
+		.md-content {
+			background-color: rgba(0, 0, 0, 0.8) !important;
+		}
+
+		.animated {
+		  -webkit-animation-duration: 1s;
+		  animation-duration: 1s;
+		  -webkit-animation-fill-mode: both;
+		  animation-fill-mode: both;
+		}
+
+		.change-div {
+			background: url(/img/buried.png);
+			background-color: rgba(0, 77, 77, 1);
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-top: 3em;
+			padding: 0.5em;
+			margin-left: 100px;
+			width: 300px;
+			margin-bottom: -50px;
+		}
+
+
+		@-webkit-keyframes bounceInRight {
+		  from, 60%, 75%, 90%, to {
+		    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		  }
+
+		  from {
+		    opacity: 0;
+		    -webkit-transform: translate3d(3000px, 0, 0);
+		    transform: translate3d(3000px, 0, 0);
+		  }
+
+		  60% {
+		    opacity: 1;
+		    -webkit-transform: translate3d(-25px, 0, 0);
+		    transform: translate3d(-25px, 0, 0);
+		  }
+
+		  75% {
+		    -webkit-transform: translate3d(10px, 0, 0);
+		    transform: translate3d(10px, 0, 0);
+		  }
+
+		  90% {
+		    -webkit-transform: translate3d(-5px, 0, 0);
+		    transform: translate3d(-5px, 0, 0);
+		  }
+
+		  to {
+		    -webkit-transform: none;
+		    transform: none;
+		  }
+		}
+
+		@keyframes bounceInRight {
+		  from, 60%, 75%, 90%, to {
+		    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		  }
+
+		  from {
+		    opacity: 0;
+		    -webkit-transform: translate3d(3000px, 0, 0);
+		    transform: translate3d(3000px, 0, 0);
+		  }
+
+		  60% {
+		    opacity: 1;
+		    -webkit-transform: translate3d(-25px, 0, 0);
+		    transform: translate3d(-25px, 0, 0);
+		  }
+
+		  75% {
+		    -webkit-transform: translate3d(10px, 0, 0);
+		    transform: translate3d(10px, 0, 0);
+		  }
+
+		  90% {
+		    -webkit-transform: translate3d(-5px, 0, 0);
+		    transform: translate3d(-5px, 0, 0);
+		  }
+
+		  to {
+		    -webkit-transform: none;
+		    transform: none;
+		  }
+		}
+
+		.bounceInRight {
+		  -webkit-animation-name: bounceInRight;
+		  animation-name: bounceInRight;
+		}
+
+		.hexagon_item {
+			z-index: 9999 !important;
+		}
+
+		.hexagon_item.club_name {
+			z-index: 1000 !important;
+		}
+
+
+		.club-container:hover {
+		    box-shadow:0 0 100px #000, 0 0 30px #fff;
+		    cursor: pointer;
+		}
+
+	</style>
+	<style type="text/css">
+		canvas {
+			position: fixed;
+			height: 100vh;
+			width: 100vw;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			z-index: -1000;
+		}
+	</style>
+	<style type="text/css">
+			.collapsible-header,
+			.collapsible-body .collection a {
+				font-size: 20px;
+				font-weight: bold;
+				color: #000;
+			}
+			
+			.collapsible-header {
+				background: url(/img/club_name_bg.png) rgba(140, 255, 255, 0.9);
+			}
+			
+			.collapsible-body .collection a {
+				background: url(/img/club_name_bg.png) rgba(255, 255, 255, 1);
+			}
+                        h2:hover{
+                           color:#3BE73F !important;
+                        }
+		</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89025632-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body class="custom-scrollbar" style="padding:1.5em">
+         
+        
+ 
+	         <div id="WebGL-output"></div>
+		<div class="md-overlay"></div>
+	<!-- the overlay element -->
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+	        
+	        
+	         
+	        <ul class="nav navbar-nav navbar-right" style="width:40%;">
+	          <li style="width:33%">
+	            <a href="index.html" class="btnfos">
+	              <svg>
+	                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+	              </svg>Home</a>
+	          </li>
+	          <li style="width:33%">
+	            <a href="about.html" class="btnfos">
+	              <svg>
+	                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+	              </svg>About Us</a>
+	          </li>
+                  
+	          <li style="width:33%">
+							<a href="register.html" class="btnfos signin">
+								<svg>
+								<rect x="0" y="0" fill="none" width="100%" height="100%" />
+								</svg>Register</a>
+	          </li>
+	        </ul>
+	      </div>
+        	      
+        
+	<!-- ===== DESKTOP ===== -->
+        	<div class="services" id="services">
+		<div class="container">
+			<h3>IETE EXECUTIVE COMMITTEE, VISAKHAPATNAM CHAPTER</h3><br><br>
+			<div class="col-md-4 services-grids services-grids1">
+				
+				<h4>Prof P.MALLIKARJUNA RAO</h4>
+				<p>Chairman, IETE VISAKHAPATNAM CHAPTER</p>
+			</div>
+                        
+			<div class="col-md-4 services-grids services-grids2">
+				
+				<h4>Prof P.RAJESH KUMAR</h4>
+				<p>VICE PRESIDENT, IETE VISAKHAPATNAM CHAPTER</p>
+			</div>
+			<div class="col-md-4 services-grids services-grids3">
+				
+				<h4>Dr. ABRAHAM  VARUGHES</h4>
+				<p>ADDITIONAL DIRECTOR, NSTL VISAKHAPATNAM</p>
+			</div>
+                        </div><br><br><br>
+                    <div class="container">
+                        <div class="col-md-6 services-grids services-grids1">
+				
+				<h4>Prof. D.V.RAMA KOTI REDDY</h4>
+				<p>SECRETARY, IETE VISAKHAPATNAM CHAPTER</p>
+			</div>
+                        
+                       <div class="col-md-6 services-grids services-grids2">
+				
+				<h4>Dr. Y.RAJA RAJESHWARI DEVI</h4>
+				<p>SCIENTIST 'F', FCS DIVISION, NSTL VISAKHAPATNAM</p>
+			</div></div>
+			
+			<div class="clearfix"></div>
+                        
+                </div><br><br><br>
+        <div class="services" id="services">
+		<div class="container">
+			<h3>ORGANIZING COMMITTEE</h3><br><br>
+			<div class="col-md-4 services-grids services-grids1">
+				
+				<h4>S.M.K. CHAITANYA</h4>
+				<p>Phone: 9848864446</p>
+                                <p>Email: chaitanyasmk@gvpce.ac.in</p>
+			</div>
+                        
+			<div class="col-md-4 services-grids services-grids2">
+				
+				<h4>SREENIVASULU MAMILLA</h4>                              
+				<p>Phone: 9866327627</p>
+                                <p>Email: sreenivasulu.mamilla@gvpce.ac.in</p>
+			</div>
+			<div class="col-md-4 services-grids services-grids3">
+				
+				<h4>CH.GANESH TEJA</h4>
+				<p>Phone: 9505459728</p>
+			</div>
+                        </div>
+        </div>
+	
+	
+	<!-- ===== DESKTOP ===== -->
+
+
+	<!-- ===== MOBILE ===== -->
+
+	<div class="mobile" style="color:#000">
+                
+     
+   
+            
+	</div>
+
+		
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/hexagon.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- <link rel="stylesheet" href="css/stars.css"> -->
+
+	<script src="js/three.min.js"></script>
+
+	<script>
+	
+	window.sr = ScrollReveal();
+
+	var fooReveal = {
+	  delay    : 200,
+	  distance : '50px',
+	  easing   : 'ease-in-out'
+	};
+
+	var fooReveal2 = {
+	  delay    : 200,
+	  distance : '50px',
+	  easing   : 'ease-in-out',
+	  scale    : 2
+	};
+
+	sr.reveal('.kludge',fooReveal);
+	sr.reveal('.cephid',fooReveal);
+	sr.reveal('.infero',fooReveal);
+	sr.reveal('.ecell',fooReveal);
+	sr.reveal('.robotics',fooReveal);
+	sr.reveal('.equilibria',fooReveal);
+	sr.reveal('.torque',fooReveal);
+	sr.reveal('.electronika',fooReveal);
+	sr.reveal('.lambda',fooReveal);
+	sr.reveal('.quiz',fooReveal);
+	sr.reveal('.infi',fooReveal);
+
+	sr.reveal('#kludge-container',fooReveal2);
+	sr.reveal('#cephid-container',fooReveal2);
+	sr.reveal('#infero-container',fooReveal2);
+	sr.reveal('#ecell-container',fooReveal2);
+	sr.reveal('#robotics-container',fooReveal2);
+	sr.reveal('#equilibria-container',fooReveal2);
+	sr.reveal('#torque-container',fooReveal2);
+	sr.reveal('#electronika-container',fooReveal2);
+	sr.reveal('#lambda-container',fooReveal2);
+	sr.reveal('#quiz-container',fooReveal2);
+	sr.reveal('#infi-container',fooReveal2);
+
+</script>
+</body>
+</html>
